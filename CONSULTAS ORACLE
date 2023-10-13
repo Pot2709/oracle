@@ -1,0 +1,47 @@
+comentario en oracle
+/*esto
+*es un comentrario
+
+* devarias lineas
+*/
+
+update carrera
+set especialidad='desarrollo de sistemas'
+where idcarrera=1;
+
+
+--delete de un registro
+
+delete from carrera where idcarrera=1;
+
+
+--selecionar todos los registros de una tabla
+
+SELECT * from CARRERA;
+
+--selecionar dos columnas de una tabla
+
+SELECT IDCARRERA,ESPECIALIDAD FROM carrera;
+
+--sentecia where
+
+select * from CARRERA where IDCARRERA=2;
+
+
+que contengan desarrollo
+select * from CARRERA where ESPECIALIDAD='desarrollo';
+
+que todos los id que seas mayores a 2
+select * from CARRERA where IDCARRERA>2;
+
+sencia y(and)
+select * from CARRERA where IDCARRERA>2 AND IDCARRERA<3;
+select * from CARRERA where IDCARRERA>2 AND IDCARRERA<2;
+
+--SENTENCIA O(OR) QUE TENGA  DESARROLLO O MENORES A 2
+select * from CARRERA where ESPECIALIDAD='DEESARROLLO' OR IDCARRERA<2;
+
+
+select * from CARRERA where ESPECIALIDAD='DEESARROLLO' OR (IDCARRERA<2 AND IDCARRERA<5);
+
+
